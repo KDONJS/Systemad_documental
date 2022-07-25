@@ -6,9 +6,11 @@
 
 * [PHP](https://www.php.net/): Version 8.1
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 8.1   | :white_check_mark: |
+| Name | Version | Supported          |
+| ---- | ------- | ------------------ |
+| PHP  |   8.1   | :white_check_mark: |
+| HTML  |   5   | :white_check_mark: |
+| CSS  |   3   | :white_check_mark: |
 
 ### Imagen referencial del proyecto
 
