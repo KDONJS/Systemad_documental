@@ -2,7 +2,7 @@
 
 ## version en desarrollo 
 
-Este proyecto aun esta en desarrollo por lo cual la version mas actual es la "*kdon version 0.0.0.3*"
+Este proyecto aun esta en desarrollo por lo cual la version mas actual es la "*kdon version 0.0.0.4*"
 
 | Version | Supported          |
 | ------- | ------------------ |
