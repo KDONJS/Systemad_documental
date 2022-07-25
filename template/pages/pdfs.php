@@ -86,7 +86,34 @@
                                 <td class='datatable-cell'>".$v['Sys_documentos']."</td>
                                 <td class='datatable-cell'>".$v['Sys_documentoscoAño']."</td>
                                 <td class='datatable-cell'>".$v['Sys_documentoscoCiclo']."</td>
-                                <td class='datatable-cell'>Detalle</td>
+                                <td class='datatable-cell'>
+                                
+                                <button type='button' class='btn btn-primary mr-2' data-toggle='modal' data-target='#exampleModalSizeXl".$v['idSys_documentos']."'>Detalle</button>
+
+
+                                <!--begin::Modal-->
+                                <div class='modal fade' id='exampleModalSizeXl".$v['idSys_documentos']."' tabindex='-1' role='dialog' aria-labelledby='exampleModalSizeXl' aria-hidden='true'>
+                                    <div class='modal-dialog modal-dialog-centered modal-xl' role='document'>
+                                        <div class='modal-content'>
+                                            <div class='modal-header'>
+                                                <h5 class='modal-title' id='exampleModalLabel'>Detalle de documentos</h5>
+                                                <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                                                    <i aria-hidden='true' class='ki ki-close'></i>
+                                                </button>
+                                            </div>
+                                            <div class='modal-body'>
+                                                <embed src='".$v['Sys_documentosLink']."' type='application/pdf' width='100%' height='600px' />
+                                            </div>
+                                            <div class='modal-footer'>
+                                                <button type='button' class='btn btn-light-primary font-weight-bold' data-dismiss='modal'>Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end::Modal-->
+                                
+                                
+                                </td>
                                 <td class='datatable-cell'><span style='width: 120px;'><span
                                             class='label label-lg font-weight-bold label-light-danger label-inline'>Matematica</span></span>
                                 </td>

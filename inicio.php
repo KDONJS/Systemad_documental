@@ -67,19 +67,24 @@
         require 'template/items/categorias.php';
 
 
-        if(isset($_GET)){
+        
            
             if(
-                $_GET['documentos'] == 'pdf'
+                $_GET['pages'] == 'pdf'
             )
             {
               require 'template/pages/pdfs.php';  
             }
 
-        }
-        else{
-            require 'template/cuerpo.php';
-        }
+            if(
+                $_GET['pages'] == 1||
+                $_GET['pages'] == 2||
+                $_GET['pages'] == 3
+            )
+            {
+                require 'template/pages/categorias.php';
+    
+            }
 
 
 

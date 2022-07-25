@@ -111,7 +111,7 @@
                                                                     echo 
                                                                     "
                                                                     <li class='menu-item' aria-haspopup='true'>
-                                                                        <a href='?categorias=".$v['idSys_Categorias']."' class='menu-link'>
+                                                                        <a href='?pages=".$v['idSys_Categorias']."' class='menu-link'>
                                                                             <i class='menu-bullet menu-bullet-dot'>
                                                                                 <span></span>
                                                                             </i>
@@ -183,7 +183,7 @@
                                                                     foreach($stmt->fetchAll() as $k=>$v){
                                                                 echo "
                                                                 <li class='menu-item' aria-haspopup='true'>
-                                                                <a href='?modulos=".$v['idSys_Modulos']."'
+                                                                <a href='?pages=".$v['idSys_Modulos']."'
                                                                     class='menu-link'>
                                                                     <i class='menu-bullet menu-bullet-dot'>
                                                                         <span></span>
@@ -211,7 +211,7 @@
                                     </div>
                                 </li>
                                 <li class="menu-item" aria-haspopup="true">
-                                    <a href="?documentos=pdf" class="menu-link">
+                                    <a href="?pages=pdf" class="menu-link">
                                         <span class="menu-text">Documentos</span>
                                         <span class="menu-desc"></span>
                                     </a>
