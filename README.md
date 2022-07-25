@@ -8,4 +8,4 @@
 #### estasmos usando las siguientes tecnologias 
 
 Esta es la lista de tecnologias:
-    * [PHP](https://www.php.net/): Version 8.1
+* [PHP](https://www.php.net/): Version 8.1
