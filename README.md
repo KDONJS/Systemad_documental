@@ -4,4 +4,8 @@
 
     <img>aca iria una imagen<img>
     
-# Esta rama es es de carga de cambios
+### Esta rama es es de carga de cambios
+#### estasmos usando las siguientes tecnologias 
+
+Esta es la lista de tecnologias:
+    * [PHP](https://www.php.net/): Version 8.1
