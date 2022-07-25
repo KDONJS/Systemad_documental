@@ -13,6 +13,6 @@
 | CSS  |   3   | :white_check_mark: |
 | JS  |      | :white_check_mark: |
 
-### Imagen referencial de la seccion categorias
+### Imagen referencial del proyecto
 
-![Imgen del proyecto](assets/media/demos/muestra-2.png)
+![Imgen del proyecto](assets/media/demos/muestra.png)
