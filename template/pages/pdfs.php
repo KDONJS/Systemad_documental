@@ -37,11 +37,9 @@
                     </div>
                     <!--end::Icon-->
                     <!--begin::Description-->
-                    <div class="m-0 text-dark-50 font-weight-bold font-size-lg">The Keen Datatable component can be
-                        displayed in modal pop-ups with vertical scrolling. For more information visit
-                        <a class="font-weight-bold"
-                            href="https://keenthemes.com/keen/?page=docs&amp;section=html/components/datatable"
-                            target="_blank">Keen KTDatatable Documentation</a>.
+                    <div class="m-0 text-dark-50 font-weight-bold font-size-lg">Bienvenido a nuestro portal de archivos
+                        <a class="font-weight-bold" href="mailto:qyyorlin51@gmail.com"
+                            target="_blank">Enviame un correo si deseas ser parte del equipo</a>.
                     </div>
                     <!--end::Description-->
                 </div>
