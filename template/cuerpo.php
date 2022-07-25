@@ -2,293 +2,138 @@
     <div class="d-flex flex-column-fluid">
         <div class="container">
 
-            <!-- begin:: Content -->
-            <div class="card card-custom gutter-b">
-                <div class="card-body">
-                    <!--begin::Top-->
-                    <div class="d-flex">
-                        <!--begin::Pic-->
-                        <div class="flex-shrink-0 mr-7">
-                            <div class="symbol symbol-50 symbol-lg-120">
-                                <img alt="Pic" src="assets/media//users/150-11.jpg">
+            <div class="row">
+
+                <div class="col-lg-6 col-xl-4 mb-5">
+                    <!--begin::Iconbox-->
+                    <div class="card card-custom wave wave-animate-slow wave-primary mb-8 mb-lg-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center p-5">
+                                <div class="mr-6">
+                                    <span class="svg-icon svg-icon-primary svg-icon-4x">
+                                        <!--begin::Svg Icon | path:/keen/theme/demo3/dist/assets/media/svg/icons/Home/Mirror.svg-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <rect x="0" y="0" width="24" height="24"></rect>
+                                                <path d="M13,17.0484323 L13,18 L14,18 C15.1045695,18 16,18.8954305 16,20 L8,20 C8,18.8954305 8.8954305,18 10,18 L11,18 L11,17.0482312 C6.89844817,16.5925472 3.58685702,13.3691811 3.07555009,9.22038742 C3.00799634,8.67224972 3.3975866,8.17313318 3.94572429,8.10557943 C4.49386199,8.03802567 4.99297853,8.42761593 5.06053229,8.97575363 C5.4896663,12.4577884 8.46049164,15.1035129 12.0008191,15.1035129 C15.577644,15.1035129 18.5681939,12.4043008 18.9524872,8.87772126 C19.0123158,8.32868667 19.505897,7.93210686 20.0549316,7.99193546 C20.6039661,8.05176407 21.000546,8.54534521 20.9407173,9.09437981 C20.4824216,13.3000638 17.1471597,16.5885839 13,17.0484323 Z" fill="#000000" fill-rule="nonzero"></path>
+                                                <path d="M12,14 C8.6862915,14 6,11.3137085 6,8 C6,4.6862915 8.6862915,2 12,2 C15.3137085,2 18,4.6862915 18,8 C18,11.3137085 15.3137085,14 12,14 Z M8.81595773,7.80077353 C8.79067542,7.43921955 8.47708263,7.16661749 8.11552864,7.19189981 C7.75397465,7.21718213 7.4813726,7.53077492 7.50665492,7.89232891 C7.62279197,9.55316612 8.39667037,10.8635466 9.79502238,11.7671393 C10.099435,11.9638458 10.5056723,11.8765328 10.7023788,11.5721203 C10.8990854,11.2677077 10.8117724,10.8614704 10.5073598,10.6647638 C9.4559885,9.98538454 8.90327706,9.04949813 8.81595773,7.80077353 Z" fill="#000000" opacity="0.3"></path>
+                                            </g>
+                                        </svg>
+                                        <!--end::Svg Icon-->
+                                    </span>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <a href="#" class="text-dark text-hover-primary font-weight-bold font-size-h4 mb-3">Get
+                                        Started</a>
+                                    <div class="text-dark-75">Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting industry. Lorem Ipsum has been the industry's standard dummy since
+                                        the 1500s.</div>
+                                </div>
                             </div>
                         </div>
-                        <!--end::Pic-->
-                        <!--begin: Info-->
-                        <div class="flex-grow-1">
-                            <!--begin::Title-->
-                            <div class="d-flex align-items-center justify-content-between flex-wrap mt-2">
-                                <!--begin::User-->
-                                <div class="mr-3">
-                                    <!--begin::Name-->
-                                    <a href="#"
-                                        class="d-flex align-items-center text-dark text-hover-primary font-size-h5 font-weight-bold mr-3">Elon
-                                        Gray</a>
-                                    <!--end::Name-->
-                                    <!--begin::Contacts-->
-                                    <div class="d-flex flex-wrap my-2">
-                                        <a href="#"
-                                            class="text-muted text-hover-primary font-weight-bold mr-lg-8 mr-5 mb-lg-0 mb-2">
-                                            <span class="svg-icon svg-icon-md svg-icon-gray-500 mr-1">
-                                                <!--begin::Svg Icon | path:/keen/theme/demo3/dist/assets/media/svg/icons/Communication/Mail-notification.svg-->
-                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
-                                                    height="24px" viewBox="0 0 24 24" version="1.1">
-                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                        <rect x="0" y="0" width="24" height="24"></rect>
-                                                        <path
-                                                            d="M21,12.0829584 C20.6747915,12.0283988 20.3407122,12 20,12 C16.6862915,12 14,14.6862915 14,18 C14,18.3407122 14.0283988,18.6747915 14.0829584,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,8 C3,6.8954305 3.8954305,6 5,6 L19,6 C20.1045695,6 21,6.8954305 21,8 L21,12.0829584 Z M18.1444251,7.83964668 L12,11.1481833 L5.85557487,7.83964668 C5.4908718,7.6432681 5.03602525,7.77972206 4.83964668,8.14442513 C4.6432681,8.5091282 4.77972206,8.96397475 5.14442513,9.16035332 L11.6444251,12.6603533 C11.8664074,12.7798822 12.1335926,12.7798822 12.3555749,12.6603533 L18.8555749,9.16035332 C19.2202779,8.96397475 19.3567319,8.5091282 19.1603533,8.14442513 C18.9639747,7.77972206 18.5091282,7.6432681 18.1444251,7.83964668 Z"
-                                                            fill="#000000"></path>
-                                                        <circle fill="#000000" opacity="0.3" cx="19.5" cy="17.5"
-                                                            r="2.5"></circle>
-                                                    </g>
-                                                </svg>
-                                                <!--end::Svg Icon-->
-                                            </span>nick@wow.com</a>
-                                        <a href="#"
-                                            class="text-muted text-hover-primary font-weight-bold mr-lg-8 mr-5 mb-lg-0 mb-2">
-                                            <span class="svg-icon svg-icon-md svg-icon-gray-500 mr-1">
-                                                <!--begin::Svg Icon | path:/keen/theme/demo3/dist/assets/media/svg/icons/General/Lock.svg-->
-                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
-                                                    height="24px" viewBox="0 0 24 24" version="1.1">
-                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                        <mask fill="white">
-                                                            <use xlink:href="#path-1"></use>
-                                                        </mask>
-                                                        <g></g>
-                                                        <path
-                                                            d="M7,10 L7,8 C7,5.23857625 9.23857625,3 12,3 C14.7614237,3 17,5.23857625 17,8 L17,10 L18,10 C19.1045695,10 20,10.8954305 20,12 L20,18 C20,19.1045695 19.1045695,20 18,20 L6,20 C4.8954305,20 4,19.1045695 4,18 L4,12 C4,10.8954305 4.8954305,10 6,10 L7,10 Z M12,5 C10.3431458,5 9,6.34314575 9,8 L9,10 L15,10 L15,8 C15,6.34314575 13.6568542,5 12,5 Z"
-                                                            fill="#000000"></path>
-                                                    </g>
-                                                </svg>
-                                                <!--end::Svg Icon-->
-                                            </span>Manager</a>
-                                        <a href="#" class="text-muted text-hover-primary font-weight-bold">
-                                            <span class="svg-icon svg-icon-md svg-icon-gray-500 mr-1">
-                                                <!--begin::Svg Icon | path:/keen/theme/demo3/dist/assets/media/svg/icons/Map/Marker2.svg-->
-                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
-                                                    height="24px" viewBox="0 0 24 24" version="1.1">
-                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                        <rect x="0" y="0" width="24" height="24"></rect>
-                                                        <path
-                                                            d="M9.82829464,16.6565893 C7.02541569,15.7427556 5,13.1079084 5,10 C5,6.13400675 8.13400675,3 12,3 C15.8659932,3 19,6.13400675 19,10 C19,13.1079084 16.9745843,15.7427556 14.1717054,16.6565893 L12,21 L9.82829464,16.6565893 Z M12,12 C13.1045695,12 14,11.1045695 14,10 C14,8.8954305 13.1045695,8 12,8 C10.8954305,8 10,8.8954305 10,10 C10,11.1045695 10.8954305,12 12,12 Z"
-                                                            fill="#000000"></path>
-                                                    </g>
-                                                </svg>
-                                                <!--end::Svg Icon-->
-                                            </span>London</a>
-                                    </div>
-                                    <!--end::Contacts-->
-                                </div>
-                                <!--begin::User-->
-                                <!--begin::Actions-->
-                                <div class="my-lg-0 my-1">
-                                    <a href="#" class="btn btn-sm btn-light-primary font-weight-bolder mr-2">Contact</a>
-                                    <a href="#" class="btn btn-sm btn-primary font-weight-bolder">Hire me</a>
-                                </div>
-                                <!--end::Actions-->
-                            </div>
-                            <!--end::Title-->
-                            <!--begin::Content-->
-                            <div class="d-flex align-items-center flex-wrap justify-content-between">
-                                <!--begin::Description-->
-                                <div class="flex-grow-1 font-weight-bold text-dark-50 py-2 py-lg-2 mr-5">Sed ut
-                                    perspiciatis unde omnis iste natus error sit voluptatem.
-                                    <br>Quis autem vel eum iure reprehenderit qui in.
-                                </div>
-                                <!--end::Description-->
-                                <!--begin::Progress-->
-                                <div class="d-flex mt-4 mt-sm-0">
-                                    <span class="font-weight-bold mr-4">Progress</span>
-                                    <div class="progress progress-xs mt-2 mb-2 flex-shrink-0 w-150px w-xl-250px">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 63%;"
-                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <span class="font-weight-bolder text-dark ml-4">78%</span>
-                                </div>
-                                <!--end::Progress-->
-                            </div>
-                            <!--end::Content-->
-                        </div>
-                        <!--end::Info-->
                     </div>
-                    <!--end::Top-->
-                    <!--begin::Separator-->
-                    <div class="separator separator-solid my-7"></div>
-                    <!--end::Separator-->
-                    <!--begin::Bottom-->
-                    <div class="d-flex align-items-center flex-wrap">
-                       
-                        <div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
-                            <span class="mr-4">
-                                <span class="svg-icon svg-icon-2x">
-                                    <!--begin::Svg Icon | path:/keen/theme/demo3/dist/assets/media/svg/icons/Shopping/Sale2.svg-->
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <rect x="0" y="0" width="24" height="24"></rect>
-                                            <polygon fill="#000000" opacity="0.3"
-                                                points="12 20.0218549 8.47346039 21.7286168 6.86905972 18.1543453 3.07048824 17.1949849 4.13894342 13.4256452 1.84573388 10.2490577 5.08710286 8.04836581 5.3722735 4.14091196 9.2698837 4.53859595 12 1.72861679 14.7301163 4.53859595 18.6277265 4.14091196 18.9128971 8.04836581 22.1542661 10.2490577 19.8610566 13.4256452 20.9295118 17.1949849 17.1309403 18.1543453 15.5265396 21.7286168">
-                                            </polygon>
-                                            <polygon fill="#000000"
-                                                points="14.0890818 8.60255815 8.36079737 14.7014391 9.70868621 16.049328 15.4369707 9.950447">
-                                            </polygon>
-                                            <path
-                                                d="M10.8543431,9.1753866 C10.8543431,10.1252593 10.085524,10.8938719 9.13585777,10.8938719 C8.18793881,10.8938719 7.41737243,10.1252593 7.41737243,9.1753866 C7.41737243,8.22551387 8.18793881,7.45690126 9.13585777,7.45690126 C10.085524,7.45690126 10.8543431,8.22551387 10.8543431,9.1753866"
-                                                fill="#000000" opacity="0.3"></path>
-                                            <path
-                                                d="M14.8641422,16.6221564 C13.9162233,16.6221564 13.1456569,15.8535438 13.1456569,14.9036711 C13.1456569,13.9520555 13.9162233,13.1851857 14.8641422,13.1851857 C15.8138085,13.1851857 16.5826276,13.9520555 16.5826276,14.9036711 C16.5826276,15.8535438 15.8138085,16.6221564 14.8641422,16.6221564 Z"
-                                                fill="#000000" opacity="0.3"></path>
-                                        </g>
-                                    </svg>
-                                    <!--end::Svg Icon-->
-                                </span>
-                            </span>
-                            <div class="d-flex flex-column text-dark-75">
-                                <span class="font-weight-bolder font-size-sm">Expenses</span>
-                                <span class="font-weight-bolder font-size-h5">
-                                    <span class="text-dark-50 font-weight-bold">$</span>164,700</span>
+                    <!--end::Iconbox-->
+                    <!--begin::Code example-->
+                    <div class="example example-compact mt-2">
+                        <div class="example-tools">
+                            <span class="example-toggle" data-toggle="tooltip" title="" data-original-title="View code"></span>
+                            <span class="example-copy" data-toggle="tooltip" title="" data-original-title="Copy code"></span>
+                        </div>
+                        <div class="example-code" style="display: none; overflow: hidden;" kt-hidden-height="455">
+                            <div class="example-highlight">
+                                ..
                             </div>
                         </div>
-                        <!--end: Item-->
-                        <!--begin: Item-->
-                        <div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
-                            <span class="mr-4">
-                                <span class="svg-icon svg-icon-2x">
-                                    <!--begin::Svg Icon | path:/keen/theme/demo3/dist/assets/media/svg/icons/Shopping/Chart-bar1.svg-->
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <rect x="0" y="0" width="24" height="24"></rect>
-                                            <rect fill="#000000" opacity="0.3" x="12" y="4" width="3" height="13"
-                                                rx="1.5"></rect>
-                                            <rect fill="#000000" opacity="0.3" x="7" y="9" width="3" height="8"
-                                                rx="1.5"></rect>
-                                            <path
-                                                d="M5,19 L20,19 C20.5522847,19 21,19.4477153 21,20 C21,20.5522847 20.5522847,21 20,21 L4,21 C3.44771525,21 3,20.5522847 3,20 L3,4 C3,3.44771525 3.44771525,3 4,3 C4.55228475,3 5,3.44771525 5,4 L5,19 Z"
-                                                fill="#000000" fill-rule="nonzero"></path>
-                                            <rect fill="#000000" opacity="0.3" x="17" y="11" width="3" height="6"
-                                                rx="1.5"></rect>
-                                        </g>
-                                    </svg>
-                                    <!--end::Svg Icon-->
-                                </span>
-                            </span>
-                            <div class="d-flex flex-column text-dark-75">
-                                <span class="font-weight-bolder font-size-sm">Net</span>
-                                <span class="font-weight-bolder font-size-h5">
-                                    <span class="text-dark-50 font-weight-bold">$</span>782,300</span>
-                            </div>
-                        </div>
-                        <!--end: Item-->
-                        <!--begin: Item-->
-                        <div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
-                            <span class="mr-4">
-                                <span class="svg-icon svg-icon-2x">
-                                    <!--begin::Svg Icon | path:/keen/theme/demo3/dist/assets/media/svg/icons/Tools/Hummer.svg-->
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <rect x="0" y="0" width="24" height="24"></rect>
-                                            <path
-                                                d="M18.4246212,12.6464466 L21.2530483,9.81801948 C21.4483105,9.62275734 21.764893,9.62275734 21.9601551,9.81801948 L22.6672619,10.5251263 C22.862524,10.7203884 22.862524,11.0369709 22.6672619,11.232233 L19.8388348,14.0606602 C19.6435726,14.2559223 19.3269901,14.2559223 19.131728,14.0606602 L18.4246212,13.3535534 C18.2293591,13.1582912 18.2293591,12.8417088 18.4246212,12.6464466 Z M3.22182541,17.9497475 L13.1213203,8.05025253 C13.5118446,7.65972824 14.1450096,7.65972824 14.5355339,8.05025253 L15.9497475,9.46446609 C16.3402718,9.85499039 16.3402718,10.4881554 15.9497475,10.8786797 L6.05025253,20.7781746 C5.65972824,21.1686989 5.02656326,21.1686989 4.63603897,20.7781746 L3.22182541,19.363961 C2.83130112,18.9734367 2.83130112,18.3402718 3.22182541,17.9497475 Z"
-                                                fill="#000000" opacity="0.3"></path>
-                                            <path
-                                                d="M12.3890873,1.28248558 L12.3890873,1.28248558 C15.150511,1.28248558 17.3890873,3.52106183 17.3890873,6.28248558 L17.3890873,10.7824856 C17.3890873,11.058628 17.1652297,11.2824856 16.8890873,11.2824856 L12.8890873,11.2824856 C12.6129449,11.2824856 12.3890873,11.058628 12.3890873,10.7824856 L12.3890873,1.28248558 Z"
-                                                fill="#000000"
-                                                transform="translate(14.889087, 6.282486) rotate(-45.000000) translate(-14.889087, -6.282486)">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                    <!--end::Svg Icon-->
-                                </span>
-                            </span>
-                            <div class="d-flex flex-column flex-lg-fill">
-                                <span class="text-dark-75 font-weight-bolder font-size-sm">73 Projects</span>
-                                <a href="#" class="text-primary font-weight-bolder">View</a>
-                            </div>
-                        </div>
-                        <!--end: Item-->
-                        <!--begin: Item-->
-                        <div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
-                            <span class="mr-4">
-                                <span class="svg-icon svg-icon-2x">
-                                    <!--begin::Svg Icon | path:/keen/theme/demo3/dist/assets/media/svg/icons/Communication/Chat2.svg-->
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <rect x="0" y="0" width="24" height="24"></rect>
-                                            <polygon fill="#000000" opacity="0.3" points="5 15 3 21.5 9.5 19.5">
-                                            </polygon>
-                                            <path
-                                                d="M13.5,21 C8.25329488,21 4,16.7467051 4,11.5 C4,6.25329488 8.25329488,2 13.5,2 C18.7467051,2 23,6.25329488 23,11.5 C23,16.7467051 18.7467051,21 13.5,21 Z M9,8 C8.44771525,8 8,8.44771525 8,9 C8,9.55228475 8.44771525,10 9,10 L18,10 C18.5522847,10 19,9.55228475 19,9 C19,8.44771525 18.5522847,8 18,8 L9,8 Z M9,12 C8.44771525,12 8,12.4477153 8,13 C8,13.5522847 8.44771525,14 9,14 L14,14 C14.5522847,14 15,13.5522847 15,13 C15,12.4477153 14.5522847,12 14,12 L9,12 Z"
-                                                fill="#000000"></path>
-                                        </g>
-                                    </svg>
-                                    <!--end::Svg Icon-->
-                                </span>
-                            </span>
-                            <div class="d-flex flex-column">
-                                <span class="text-dark-75 font-weight-bolder font-size-sm">648 Comments</span>
-                                <a href="#" class="text-primary font-weight-bolder">View</a>
-                            </div>
-                        </div>
-                        <!--end: Item-->
-                        <!--begin: Item-->
-                        <div class="d-flex align-items-center flex-lg-fill my-1">
-                            <span class="mr-4">
-                                <span class="svg-icon svg-icon-2x">
-                                    <!--begin::Svg Icon | path:/keen/theme/demo3/dist/assets/media/svg/icons/Communication/Group.svg-->
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <polygon points="0 0 24 0 24 24 0 24"></polygon>
-                                            <path
-                                                d="M18,14 C16.3431458,14 15,12.6568542 15,11 C15,9.34314575 16.3431458,8 18,8 C19.6568542,8 21,9.34314575 21,11 C21,12.6568542 19.6568542,14 18,14 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
-                                                fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
-                                            <path
-                                                d="M17.6011961,15.0006174 C21.0077043,15.0378534 23.7891749,16.7601418 23.9984937,20.4 C24.0069246,20.5466056 23.9984937,21 23.4559499,21 L19.6,21 C19.6,18.7490654 18.8562935,16.6718327 17.6011961,15.0006174 Z M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
-                                                fill="#000000" fill-rule="nonzero"></path>
-                                        </g>
-                                    </svg>
-                                    <!--end::Svg Icon-->
-                                </span>
-                            </span>
-                            <div class="symbol-group symbol-hover">
-                                <div class="symbol symbol-30 symbol-circle" data-toggle="tooltip" title=""
-                                    data-original-title="Mark Stone">
-                                    <img alt="Pic" src="assets/media/users/150-3.jpg">
-                                </div>
-                                <div class="symbol symbol-30 symbol-circle" data-toggle="tooltip" title=""
-                                    data-original-title="Charlie Stone">
-                                    <img alt="Pic" src="assets/media/users/150-11.jpg">
-                                </div>
-                                <div class="symbol symbol-30 symbol-circle" data-toggle="tooltip" title=""
-                                    data-original-title="Luca Doncic">
-                                    <img alt="Pic" src="assets/media/users/150-4.jpg">
-                                </div>
-                                <div class="symbol symbol-30 symbol-circle" data-toggle="tooltip" title=""
-                                    data-original-title="Nick Mana">
-                                    <img alt="Pic" src="assets/media/users/150-5.jpg">
-                                </div>
-                                <div class="symbol symbol-30 symbol-circle" data-toggle="tooltip" title=""
-                                    data-original-title="Teresa Fox">
-                                    <img alt="Pic" src="assets/media/users/150-9.jpg">
-                                </div>
-                                <div class="symbol symbol-30 symbol-circle symbol-light-primary" data-toggle="tooltip"
-                                    title="" data-original-title="More users">
-                                    <span class="symbol-label font-weight-bold">5+</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!--end: Item-->
                     </div>
-                    <!--end::Bottom-->
+                    <!--end::Code example-->
+                </div>
+                <div class="col-lg-6 col-xl-4 mb-5">
+                    <!--begin::Iconbox-->
+                    <div class="card card-custom wave wave-animate wave-danger mb-8 mb-lg-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center p-5">
+                                <div class="mr-6">
+                                    <span class="svg-icon svg-icon-danger svg-icon-4x">
+                                        <!--begin::Svg Icon | path:/keen/theme/demo3/dist/assets/media/svg/icons/General/Thunder-move.svg-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <rect x="0" y="0" width="24" height="24"></rect>
+                                                <path d="M16.3740377,19.9389434 L22.2226499,11.1660251 C22.4524142,10.8213786 22.3592838,10.3557266 22.0146373,10.1259623 C21.8914367,10.0438285 21.7466809,10 21.5986122,10 L17,10 L17,4.47708173 C17,4.06286817 16.6642136,3.72708173 16.25,3.72708173 C15.9992351,3.72708173 15.7650616,3.85240758 15.6259623,4.06105658 L9.7773501,12.8339749 C9.54758575,13.1786214 9.64071616,13.6442734 9.98536267,13.8740377 C10.1085633,13.9561715 10.2533191,14 10.4013878,14 L15,14 L15,19.5229183 C15,19.9371318 15.3357864,20.2729183 15.75,20.2729183 C16.0007649,20.2729183 16.2349384,20.1475924 16.3740377,19.9389434 Z" fill="#000000"></path>
+                                                <path d="M4.5,5 L9.5,5 C10.3284271,5 11,5.67157288 11,6.5 C11,7.32842712 10.3284271,8 9.5,8 L4.5,8 C3.67157288,8 3,7.32842712 3,6.5 C3,5.67157288 3.67157288,5 4.5,5 Z M4.5,17 L9.5,17 C10.3284271,17 11,17.6715729 11,18.5 C11,19.3284271 10.3284271,20 9.5,20 L4.5,20 C3.67157288,20 3,19.3284271 3,18.5 C3,17.6715729 3.67157288,17 4.5,17 Z M2.5,11 L6.5,11 C7.32842712,11 8,11.6715729 8,12.5 C8,13.3284271 7.32842712,14 6.5,14 L2.5,14 C1.67157288,14 1,13.3284271 1,12.5 C1,11.6715729 1.67157288,11 2.5,11 Z" fill="#000000" opacity="0.3"></path>
+                                            </g>
+                                        </svg>
+                                        <!--end::Svg Icon-->
+                                    </span>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <a href="#" class="text-dark text-hover-primary font-weight-bold font-size-h4 mb-3">Tutorials</a>
+                                    <div class="text-dark-75">Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting industry. Lorem Ipsum has been the industry's standard dummy since
+                                        the 1500s.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end::Iconbox-->
+                    <!--begin::Code example-->
+                    <div class="example example-compact mt-2">
+                        <div class="example-tools">
+                            <span class="example-toggle" data-toggle="tooltip" title="" data-original-title="View code"></span>
+                            <span class="example-copy" data-toggle="tooltip" title="" data-original-title="Copy code"></span>
+                        </div>
+                        <div class="example-code" style="display: none; overflow: hidden;" kt-hidden-height="455">
+                            <div class="example-highlight">
+                                ..
+                            </div>
+                        </div>
+                    </div>
+                    <!--end::Code example-->
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                    <!--begin::Iconbox-->
+                    <div class="card card-custom wave wave-animate-fast wave-success">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center p-5">
+                                <div class="mr-6">
+                                    <span class="svg-icon svg-icon-success svg-icon-4x">
+                                        <!--begin::Svg Icon | path:/keen/theme/demo3/dist/assets/media/svg/icons/Design/Sketch.svg-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <rect x="0" y="0" width="24" height="24"></rect>
+                                                <polygon fill="#000000" opacity="0.3" points="5 3 19 3 23 8 1 8">
+                                                </polygon>
+                                                <polygon fill="#000000" points="23 8 12 20 1 8"></polygon>
+                                            </g>
+                                        </svg>
+                                        <!--end::Svg Icon-->
+                                    </span>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <a href="#" class="text-dark text-hover-primary font-weight-bold font-size-h4 mb-3">User
+                                        Guide</a>
+                                    <div class="text-dark-75">Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting industry. Lorem Ipsum has been the industry's standard dummy since
+                                        the 1500s.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end::Iconbox-->
+                    <!--begin::Code example-->
+                    <div class="example example-compact mt-2">
+                        <div class="example-tools">
+                            <span class="example-toggle" data-toggle="tooltip" title="" data-original-title="View code"></span>
+                            <span class="example-copy" data-toggle="tooltip" title="" data-original-title="Copy code"></span>
+                        </div>
+                        <div class="example-code">
+                            <div class="example-highlight">
+                                ..
+                            </div>
+                        </div>
+                    </div>
+                    <!--end::Code example-->
                 </div>
             </div>
-            <!-- end :: Content -->
 
 
         </div>
