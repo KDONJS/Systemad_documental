@@ -4,7 +4,7 @@
         <!--begin::Logo-->
         <div class="d-none d-lg-flex align-items-center flex-wrap w-250px">
             <!--begin::Logo-->
-            <a href="index.html">
+            <a href="?inicio=index">
                 <img alt="Logo" width="250px" src="assets/media/demos/Homey-Color.svg"
                     class="max-h-50px" type="img/svg" />
             </a>
