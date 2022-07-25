@@ -1,7 +1,7 @@
 <div id="kt_header_mobile" class="header-mobile header-mobile-fixed">
     <!--begin::Logo-->
     <a href="index.html">
-        <img alt="Logo" src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/logos/logo-4.svg"
+        <img alt="Logo" width="150px" src="assets/media/demos/Homey-Color.svg"
             class="max-h-30px" />
     </a>
     <div class="d-flex align-items-center">

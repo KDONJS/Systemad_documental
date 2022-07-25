@@ -5,8 +5,8 @@
         <div class="d-none d-lg-flex align-items-center flex-wrap w-250px">
             <!--begin::Logo-->
             <a href="index.html">
-                <img alt="Logo" src="https://preview.keenthemes.com/keen/theme/demo3/dist/assets/media/logos/logo-4.svg"
-                    class="max-h-50px" />
+                <img alt="Logo" width="250px" src="assets/media/demos/Homey-Color.svg"
+                    class="max-h-50px" type="img/svg" />
             </a>
             <!--end::Logo-->
         </div>
