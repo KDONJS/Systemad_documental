@@ -52,7 +52,7 @@
                             <div class="d-flex align-items-center flex-wrap justify-content-between">
                                 <!--begin::Description-->
                                 <div class="flex-grow-1 font-weight-bold text-dark-50 py-2 py-lg-2 mr-5">
-                                    En esta categoria podras encontrar todo lo que necesitas para el desarrollo de las ciencia.
+                                    En esta categoria podras encontrar todo lo que necesitas para el desarrollo personal.
                                 </div>
                                 <!--end::Description-->
                                 <!--begin::Progress-->

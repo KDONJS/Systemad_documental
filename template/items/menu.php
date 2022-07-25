@@ -1,6 +1,6 @@
 <div id="kt_header_mobile" class="header-mobile header-mobile-fixed">
     <!--begin::Logo-->
-    <a href="index.html">
+    <a href="?inicio=index">
         <img alt="Logo" width="150px" src="assets/media/demos/Homey-Color.svg"
             class="max-h-30px" />
     </a>
