@@ -1,9 +1,4 @@
-<?php 
-    require 'db/db.php';
-    require 'db/funciones.php';
-?>
-
-
+<?php require "funciones.php"; ?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -34,11 +29,11 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 
-    <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle1036.css?v=2.1.1" rel="stylesheet"
+    <link href="../assets/plugins/custom/fullcalendar/fullcalendar.bundle1036.css?v=2.1.1" rel="stylesheet"
         type="text/css" />
-    <link href="assets/plugins/global/plugins.bundle1036.css?v=2.1.1" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/custom/prismjs/prismjs.bundle1036.css?v=2.1.1" rel="stylesheet" type="text/css" />
-    <link href="assets/css/style.bundle1036.css?v=2.1.1" rel="stylesheet" type="text/css" />
+    <link href="../assets/plugins/global/plugins.bundle1036.css?v=2.1.1" rel="stylesheet" type="text/css" />
+    <link href="../assets/plugins/custom/prismjs/prismjs.bundle1036.css?v=2.1.1" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/style.bundle1036.css?v=2.1.1" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
 
     <link rel="shortcut icon" href="https://preview.keenthemes.com/keen/assets/media/logos/favicon.ico" />
@@ -63,43 +58,25 @@
 <body id="kt_body" class="header-fixed header-mobile-fixed subheader-enabled page-loading">
 
 
-    <?php 
-        require 'template/items/menu.php';
-        require 'template/items/categorias.php';
+    <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+        <div class="d-flex flex-column-fluid">
+            <div class="container">
+
+                <ul class="list-group">
+                    <?php
+                        foreach(categorias($conn) as $categoria){
+                            echo "<li class='list-group-item'>".$categoria['idSys_Categorias']."</li>";
+                        }
+
+                    ?>
+                    <li class="list-group-item"><?php echo Conteo_categorias($conn); ?></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
 
 
-        
-           
-            if(isset($_GET['pages'])){
-                if(
-                    $_GET['pages'] == 'pdf'
-                )
-                {
-                  require 'template/pages/pdfs.php';  
-                }
-    
-                if(
-                    $_GET['pages'] == 1||
-                    $_GET['pages'] == 2||
-                    $_GET['pages'] == 3
-                )
-                {
-                    require 'template/pages/categorias.php';
-        
-                }
-            }
-
-            else{
-                require 'template/cuerpo.php';
-            }
-
-
-
-        require 'template/items/footer.php';
-        require 'template/items/panel.php';
-        require 'template/items/scroll.php';
-
-    ?>
 
     <!--end::Demo Panel-->
     <script>
@@ -165,21 +142,21 @@
         "font-family": "Poppins"
     };
     </script>
-    <script src="assets/plugins/global/plugins.bundle1036.js?v=2.1.1"></script>
-    <script src="assets/plugins/custom/prismjs/prismjs.bundle1036.js?v=2.1.1"></script>
-    <script src="assets/js/scripts.bundle1036.js?v=2.1.1"></script>
-    <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle1036.js?v=2.1.1"></script>
-    <script src="assets/js/pages/widgets1036.js?v=2.1.1"></script>
+    <script src="../assets/plugins/global/plugins.bundle1036.js?v=2.1.1"></script>
+    <script src="../assets/plugins/custom/prismjs/prismjs.bundle1036.js?v=2.1.1"></script>
+    <script src="../assets/js/scripts.bundle1036.js?v=2.1.1"></script>
+    <script src="../assets/plugins/custom/fullcalendar/fullcalendar.bundle1036.js?v=2.1.1"></script>
+    <script src="../assets/js/pages/widgets1036.js?v=2.1.1"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 </body>
 
-    <script>
-        $(document).ready(function() {
-            $('#example').DataTable({
-                scrollX: true,
-            });
-        });
-    </script>
+<script>
+$(document).ready(function() {
+    $('#example').DataTable({
+        scrollX: true,
+    });
+});
+</script>
 
 </html>
