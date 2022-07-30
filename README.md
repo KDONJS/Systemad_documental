@@ -1,6 +1,9 @@
 # Sistema de carga de archivos
 
     En este sistema se trata de mejorar el manejo de aprendizaje de los estudiantes
+    -- esta version esta en mejoras de manejo de contenido de base de datos --
+
+    kdon version 0.0.1.0 "*mejoras*"
 
 ### Las tecnologias usadas son las siguientes 
 
