@@ -2,6 +2,17 @@
 
 require "db.php";
 
+// mostrar en cabecera el nombre de la categoria
+
+function mostrar_categoria($conn)
+{
+    $stmt = $conn->prepare("SELECT * FROM sys_cursos ORDER BY RAND() LIMIT 7");
+    $stmt->execute();
+    $result = $stmt->fetchAll();
+    return $result;
+}
+
+
 //lectura de datos de la base de datos
 
 

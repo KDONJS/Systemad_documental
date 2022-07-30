@@ -14,13 +14,7 @@
         <!--begin::Nav-->
         <div class="subheader-nav nav flex-grow-1">
             <!--begin::Item-->
-
-
             <?php
-
-            $stmt = $conn->prepare("SELECT * FROM sys_cursos ORDER BY RAND() LIMIT 7");
-            $stmt->execute();
-            $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
             foreach ($stmt->fetchAll() as $k => $v) {
                 echo "
                 <a href='?cursos=".$v['idSys_Cursos']."' class='nav-item'>
