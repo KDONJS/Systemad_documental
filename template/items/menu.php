@@ -1,8 +1,7 @@
 <div id="kt_header_mobile" class="header-mobile header-mobile-fixed">
     <!--begin::Logo-->
     <a href="?inicio=index">
-        <img alt="Logo" width="150px" src="assets/media/demos/Homey-Color.svg"
-            class="max-h-30px" />
+        <img alt="Logo" width="150px" src="assets/media/demos/Homey-Color.svg" class="max-h-30px" />
     </a>
     <div class="d-flex align-items-center">
         <button class="btn p-0 rounded-0 ml-4" id="kt_header_mobile_toggle">
@@ -101,26 +100,19 @@
                                                 </a>
                                                 <div class="menu-submenu menu-submenu-classic menu-submenu-right">
                                                     <ul class="menu-subnav">
-                                                        <?php 
-
-                                                            $stmt = $conn->prepare("SELECT * FROM sys_categorias");
-                                                            $stmt->execute();
-                                                            $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-                                                                foreach($stmt->fetchAll() as $k=>$v)
-                                                                {
-                                                                    echo 
-                                                                    "
+                                                        <?php
+                                                        foreach (categorias($conn) as $k => $v) {
+                                                            echo "
                                                                     <li class='menu-item' aria-haspopup='true'>
-                                                                        <a href='?pages=".$v['idSys_Categorias']."' class='menu-link'>
+                                                                        <a href='?pages=" . $v['idSys_Categorias'] . "' class='menu-link'>
                                                                             <i class='menu-bullet menu-bullet-dot'>
                                                                                 <span></span>
                                                                             </i>
-                                                                            <span class='menu-text'>".$v['Sys_Categorias']."</span>
+                                                                            <span class='menu-text'>" . $v['Sys_Categorias'] . "</span>
                                                                         </a>
                                                                     </li>
                                                                     ";
-                                                                }
-                                                        
+                                                        }
                                                         ?>
 
                                                     </ul>
@@ -153,54 +145,48 @@
                                                 </a>
                                                 <div class="menu-submenu menu-submenu-classic menu-submenu-right">
                                                     <ul class="menu-subnav">
-                                                        <?php 
-
-                                                        $stmt = $conn->prepare("SELECT * FROM sys_cursos");
-                                                        $stmt->execute();
-                                                        $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-                                                            foreach($stmt->fetchAll() as $k=>$v)
-                                                            {
-                                                                echo 
-                                                                "
+                                                        <?php
+                                                        foreach (cursos($conn) as $k => $v) {
+                                                            echo
+                                                            "
                                                                 <li class='menu-item menu-item-submenu' data-menu-toggle='hover'
                                                             aria-haspopup='true'>
                                                             <a class='menu-link menu-toggle'>
                                                                 <i class='menu-bullet menu-bullet-dot'>
                                                                     <span></span>
                                                                 </i>
-                                                                <span class='menu-text'>".$v['Sys_Cursos']."</span>
+                                                                <span class='menu-text'>" . $v['Sys_Cursos'] . "</span>
                                                                 <i class='menu-arrow'></i>
                                                             </a>
                                                             <div
                                                                 class='menu-submenu menu-submenu-classic menu-submenu-right'>
                                                                 <ul class='menu-subnav'>";
 
-                                                                $id_curso = $v['idSys_Cursos'];
-                                                                   
-                                                                $stmt = $conn->prepare("SELECT * FROM sys_modulos WHERE idSys_Cursos = $id_curso");
-                                                                $stmt->execute();
-                                                                $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-                                                                    foreach($stmt->fetchAll() as $k=>$v){
+                                                            $id_curso = $v['idSys_Cursos'];
+
+                                                            $stmt = $conn->prepare("SELECT * FROM sys_modulos WHERE idSys_Cursos = $id_curso");
+                                                            $stmt->execute();
+                                                            $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+                                                            foreach ($stmt->fetchAll() as $k => $v) {
                                                                 echo "
                                                                 <li class='menu-item' aria-haspopup='true'>
-                                                                <a href='?pages=".$v['idSys_Modulos']."'
+                                                                <a href='?pages=" . $v['idSys_Modulos'] . "'
                                                                     class='menu-link'>
                                                                     <i class='menu-bullet menu-bullet-dot'>
                                                                         <span></span>
                                                                     </i>
-                                                                    <span class='menu-text'>".$v['Sys_ModulosCurso']."</span>
+                                                                    <span class='menu-text'>" . $v['Sys_ModulosCurso'] . "</span>
                                                                 </a>
                                                             </li>
                                                                 ";
-                                                            
                                                             }
 
-                                                        echo "       
+                                                            echo "       
                                                                 </ul>
                                                             </div>
                                                         </li>
                                                                 ";
-                                                            }
+                                                        }
 
                                                         ?>
                                                     </ul>
@@ -513,7 +499,7 @@
                                 </span>
                             </div>
                         </div>
-                        
+
                     </div>
                     <!--end::Topbar-->
                 </div>

@@ -10,16 +10,12 @@
                         <!--begin::Pic-->
                         <div class="flex-shrink-0 mr-7">
 
-                        <?php 
-                            
-                             $stmt = $conn->prepare("SELECT * FROM sys_categorias WHERE idSys_Categorias = $id_categoria");
-                             $stmt->execute();
-                             //echo $stmt->rowCount();
-                             $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-                                 foreach($stmt->fetchAll() as $k=>$v){
-                                    echo "
+                            <?php
+
+                            foreach (categorias_panel($conn, $id_categoria) as $k => $v) {
+                                echo "
                                     <div class='symbol symbol-50 symbol-lg-120'>
-                                    <img alt='Pic' src='".$v['Sys_categoriasLink']."'>
+                                    <img alt='Pic' src='" . $v['Sys_categoriasLink'] . "'>
                                 </div>
                             </div>
                             <!--end::Pic-->
@@ -31,121 +27,102 @@
                                     <div class='mr-3'>
                                         <!--begin::Name-->
                                         <a href='#'
-                                            class='d-flex align-items-center text-dark text-hover-primary font-size-h5 font-weight-bold mr-3'>".$v['Sys_Categorias']."</a>
+                                            class='d-flex align-items-center text-dark text-hover-primary font-size-h5 font-weight-bold mr-3'>" . $v['Sys_Categorias'] . "</a>
                                         <!--end::Name-->
                                        
                                     </div>
                                     
                                     ";
-                                 }
-                        ?>
+                            }
+                            ?>
 
-                                <!--begin::User-->
-                                <!--begin::Actions-->
-                                <div class="my-lg-0 my-1">
-                                    <a href="mailto:ejemplo@gmail.com" class="btn btn-sm btn-light-primary font-weight-bolder mr-2">Enviame una sugerencia</a>
-                                </div>
-                                <!--end::Actions-->
+                            <!--begin::User-->
+                            <!--begin::Actions-->
+                            <div class="my-lg-0 my-1">
+                                <a href="mailto:ejemplo@gmail.com" class="btn btn-sm btn-light-primary font-weight-bolder mr-2">Enviame una
+                                    sugerencia</a>
                             </div>
-                            <!--end::Title-->
-                            <!--begin::Content-->
-                            <div class="d-flex align-items-center flex-wrap justify-content-between">
-                                <!--begin::Description-->
-                                <div class="flex-grow-1 font-weight-bold text-dark-50 py-2 py-lg-2 mr-5">
-                                    En esta categoria podras encontrar todo lo que necesitas para el desarrollo personal.
-                                </div>
-                                <!--end::Description-->
-                                <!--begin::Progress-->
-                                <div class="d-flex mt-4 mt-sm-0">
-                                    <span class="font-weight-bold mr-4">Progreso</span>
-                                    <div class="progress progress-xs mt-2 mb-2 flex-shrink-0 w-150px w-xl-250px">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 50%;"
-                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <span class="font-weight-bolder text-dark ml-4">78%</span>
-                                </div>
-                                <!--end::Progress-->
-                            </div>
-                            <!--end::Content-->
+                            <!--end::Actions-->
                         </div>
-                        <!--end::Info-->
+                        <!--end::Title-->
+                        <!--begin::Content-->
+                        <div class="d-flex align-items-center flex-wrap justify-content-between">
+                            <!--begin::Description-->
+                            <div class="flex-grow-1 font-weight-bold text-dark-50 py-2 py-lg-2 mr-5">
+                                En esta categoria podras encontrar todo lo que necesitas para el desarrollo personal.
+                            </div>
+                            <!--end::Description-->
+                            <!--begin::Progress-->
+                            <div class="d-flex mt-4 mt-sm-0">
+                                <span class="font-weight-bold mr-4">Progreso</span>
+                                <div class="progress progress-xs mt-2 mb-2 flex-shrink-0 w-150px w-xl-250px">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="font-weight-bolder text-dark ml-4">78%</span>
+                            </div>
+                            <!--end::Progress-->
+                        </div>
+                        <!--end::Content-->
                     </div>
-                    <!--end::Top-->
-                    <!--begin::Separator-->
-                    <div class="separator separator-solid my-7"></div>
-                    <!--end::Separator-->
-                    <!--begin::Bottom-->
-                    <div class="d-flex align-items-center flex-wrap">
-                       
-                        
-                    
-                        <!--begin: Item-->
-                        <div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
-                            <span class="mr-4">
-                                <span class="svg-icon svg-icon-2x">
-                                    <!--begin::Svg Icon | path:/keen/theme/demo3/dist/assets/media/svg/icons/Shopping/Chart-bar1.svg-->
-                                    <i class=" fa fa-book-reader"></i>
-                                    <!--end::Svg Icon-->
-                                </span>
-                            </span>
-                            <div class="d-flex flex-column text-dark-75">
-                                <span class="font-weight-bolder font-size-sm">Cursos</span>
-                                <span class="font-weight-bolder font-size-h5">
-                                    <?php 
-                                    $stmt = $conn->prepare("SELECT * FROM sys_cursos WHERE idSys_Categorias = $id_categoria");
-                                    $stmt->execute();
-                                    $cursos = $stmt->rowCount();
-                                        echo "<span class='text-dark-50 font-weight-bold'>+</span>".$cursos."</span>"
-                                    
-                                    ?>
-                            </div>
-                        </div>
-                        <!--end: Item-->
-                        <!--begin: Item-->
-                        <div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
-                            <span class="mr-4">
-                                <span class="svg-icon svg-icon-2x">
-                                   <i class="fa fa-map"></i>
-                                </span>
-                            </span>
-                            <div class="d-flex flex-column flex-lg-fill">
-                                <span class="text-dark-75 font-weight-bolder font-size-sm">Modulos</span>
-                                 <?php 
-                                     $stmt = $conn->prepare("SELECT * FROM sys_modulos WHERE Sys_idcategorias = $id_categoria");
-                                     $stmt->execute(); 
-                                     $modulos = $stmt->rowCount(); 
-                                        echo "<a class='text-primary font-weight-bolder'>+<span>".$modulos."</span></a>";
-                                 ?>
-                            </div>
-                        </div>
-                        <!--end: Item-->
-                        <!--begin: Item-->
-                        <div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
-                            <span class="mr-4">
-                                <span class="svg-icon svg-icon-2x">
-                                    <i class="fa fa-space-shuttle"></i>
-                                </span>
-                            </span>
-                            <div class="d-flex flex-column">
-                                <span class="text-dark-75 font-weight-bolder font-size-sm">Secciones</span>
-                                <?php 
-
-                                    $stmt = $conn->prepare("SELECT * FROM sys_secciones WHERE idSys_Categorias = $id_categoria");
-                                    $stmt->execute();
-                                    $secciones = $stmt->rowCount();
-                                    echo "<a class='text-primary font-weight-bolder'>+<span>".$secciones."</span></a>"
-                                ?>
-                            </div>
-                        </div>
-                        <!--end: Item-->
-                        
-                    </div>
-                    <!--end::Bottom-->
+                    <!--end::Info-->
                 </div>
+                <!--end::Top-->
+                <!--begin::Separator-->
+                <div class="separator separator-solid my-7"></div>
+                <!--end::Separator-->
+                <!--begin::Bottom-->
+                <div class="d-flex align-items-center flex-wrap">
+
+
+
+                    <!--begin: Item-->
+                    <div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
+                        <span class="mr-4">
+                            <span class="svg-icon svg-icon-2x">
+                                <!--begin::Svg Icon | path:/keen/theme/demo3/dist/assets/media/svg/icons/Shopping/Chart-bar1.svg-->
+                                <i class=" fa fa-book-reader"></i>
+                                <!--end::Svg Icon-->
+                            </span>
+                        </span>
+                        <div class="d-flex flex-column text-dark-75">
+                            <span class="font-weight-bolder font-size-sm">Cursos</span>
+                            <span class="font-weight-bolder font-size-h5">
+                               <span class='text-dark-50 font-weight-bold'>+</span><?php echo Conteo_cursos($conn,$id_categoria); ?></span>  
+                        </div>
+                    </div>
+                    <!--end: Item-->
+                    <!--begin: Item-->
+                    <div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
+                        <span class="mr-4">
+                            <span class="svg-icon svg-icon-2x">
+                                <i class="fa fa-map"></i>
+                            </span>
+                        </span>
+                        <div class="d-flex flex-column flex-lg-fill">
+                            <span class="text-dark-75 font-weight-bolder font-size-sm">Modulos</span>
+                            <a class='text-primary font-weight-bolder'>+<span><?php echo Conteo_modulos($conn,$id_categoria); ?></span></a>
+                        </div>
+                    </div>
+                    <!--end: Item-->
+                    <!--begin: Item-->
+                    <div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
+                        <span class="mr-4">
+                            <span class="svg-icon svg-icon-2x">
+                                <i class="fa fa-space-shuttle"></i>
+                            </span>
+                        </span>
+                        <div class="d-flex flex-column">
+                            <span class="text-dark-75 font-weight-bolder font-size-sm">Secciones</span>
+                            <a class='text-primary font-weight-bolder'>+<span><?php echo Conteo_secciones($conn,$id_categoria); ?></span></a>
+                        </div>
+                    </div>
+                    <!--end: Item-->
+
+                </div>
+                <!--end::Bottom-->
             </div>
-
-
-
         </div>
+
     </div>
+</div>
 </div>
