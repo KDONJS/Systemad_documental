@@ -15,7 +15,7 @@
         <div class="subheader-nav nav flex-grow-1">
             <!--begin::Item-->
             <?php
-            foreach ($stmt->fetchAll() as $k => $v) {
+            foreach (mostrar_categoria($conn) as $k => $v) {
                 echo "
                 <a href='?cursos=".$v['idSys_Cursos']."' class='nav-item'>
                     <span class='nav-label px-10'>

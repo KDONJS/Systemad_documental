@@ -43,6 +43,14 @@ function cursos($conn)
     return $cursos;
 }
 
+function modulos($conn,$id_curso)
+{
+    $stmt = $conn->prepare("SELECT * FROM sys_modulos WHERE idSys_Cursos = $id_curso");
+    $stmt->execute();
+    $modulos = $stmt->fetchAll();
+    return $modulos;
+}
+
 
 //conteos 
 

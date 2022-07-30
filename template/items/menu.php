@@ -163,11 +163,7 @@
                                                                 <ul class='menu-subnav'>";
 
                                                             $id_curso = $v['idSys_Cursos'];
-
-                                                            $stmt = $conn->prepare("SELECT * FROM sys_modulos WHERE idSys_Cursos = $id_curso");
-                                                            $stmt->execute();
-                                                            $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-                                                            foreach ($stmt->fetchAll() as $k => $v) {
+                                                            foreach (modulos($conn,$id_curso) as $k => $v) {
                                                                 echo "
                                                                 <li class='menu-item' aria-haspopup='true'>
                                                                 <a href='?pages=" . $v['idSys_Modulos'] . "'
