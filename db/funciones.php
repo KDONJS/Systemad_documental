@@ -2,6 +2,9 @@
 
 require "db.php";
 
+//lectura de datos de la base de datos
+
+
 function categorias($conn)
 {
 
@@ -11,7 +14,7 @@ function categorias($conn)
     return $categorias;
 }
 
-function categorias_panel($conn,$id_categoria)
+function categorias_panel($conn, $id_categoria)
 {
     $id = $id_categoria;
     $stmt = $conn->prepare("SELECT * FROM sys_categorias WHERE idSys_Categorias = $id");
@@ -41,7 +44,7 @@ function Conteo_categorias($conn)
     return $conteo;
 }
 
-function Conteo_cursos($conn,$id_categoria)
+function Conteo_cursos($conn, $id_categoria)
 {
     $id = $id_categoria;
     $stmt = $conn->prepare("SELECT * FROM sys_cursos WHERE idSys_Categorias = $id");
@@ -50,7 +53,7 @@ function Conteo_cursos($conn,$id_categoria)
     return $conteo_cursos;
 }
 
-function Conteo_modulos($conn,$id_categoria)
+function Conteo_modulos($conn, $id_categoria)
 {
     $id = $id_categoria;
     $stmt = $conn->prepare("SELECT * FROM sys_modulos WHERE Sys_idcategorias = $id");
@@ -59,11 +62,22 @@ function Conteo_modulos($conn,$id_categoria)
     return $conteo_modulos;
 }
 
-function Conteo_secciones($conn,$id_categoria)
+function Conteo_secciones($conn, $id_categoria)
 {
     $id = $id_categoria;
     $stmt = $conn->prepare("SELECT * FROM sys_secciones WHERE idSys_Categorias = $id");
     $stmt->execute();
     $conteo_secciones = $stmt->rowCount();
     return $conteo_secciones;
+}
+
+
+// selecion de documentos //
+
+function pdf($conn)
+{
+    $stmt = $conn->prepare("SELECT * FROM sys_documentos");
+    $stmt->execute();
+    $pdf = $stmt->fetchAll();
+    return $pdf;
 }
