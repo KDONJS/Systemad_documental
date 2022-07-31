@@ -1,5 +1,4 @@
 <?php 
-    require 'db/db.php';
     require 'db/funciones.php';
 ?>
 
@@ -79,9 +78,7 @@
                 }
     
                 if(
-                    $_GET['pages'] == 1||
-                    $_GET['pages'] == 2||
-                    $_GET['pages'] == 3
+                    $_GET['pages'] == 'categorias'
                 )
                 {
                     require 'template/pages/categorias.php';

@@ -1,4 +1,4 @@
-<?php $id_categoria = $_GET['pages']; ?>
+<?php $id_categoria = $_GET['id']; ?>
 <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
     <div class="d-flex flex-column-fluid">
         <div class="container">
