@@ -12,9 +12,7 @@ function mostrar_categoria($conn)
     return $result;
 }
 
-
 //lectura de datos de la base de datos
-
 
 function categorias($conn)
 {
