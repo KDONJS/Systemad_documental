@@ -104,7 +104,7 @@
                                                         foreach (categorias($conn) as $k => $v) {
                                                             echo "
                                                                     <li class='menu-item' aria-haspopup='true'>
-                                                                        <a href='?pages=" . $v['idSys_Categorias'] . "' class='menu-link'>
+                                                                        <a href='?id=" . $v['idSys_Categorias'] . "&pages=categorias' class='menu-link'>
                                                                             <i class='menu-bullet menu-bullet-dot'>
                                                                                 <span></span>
                                                                             </i>

@@ -1,4 +1,4 @@
-<?php require "funciones.php"; ?>
+<?php require "insert/funciones_insert.php"; ?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -62,15 +62,60 @@
         <div class="d-flex flex-column-fluid">
             <div class="container">
 
-                <ul class="list-group">
-                    <?php
-                        foreach(categorias($conn) as $categoria){
-                            echo "<li class='list-group-item'>".$categoria['idSys_Categorias']."</li>";
-                        }
 
-                    ?>
-                    <li class="list-group-item"><?php echo Conteo_categorias($conn); ?></li>
-                </ul>
+                <!-- form -->
+
+                <div class="card card-custom">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            Textual HTML5 Inputs
+                        </h3>
+                    </div>
+                    <!--begin::Form-->
+                    <form method="POST">
+                        <div class="card-body">
+                            <div class="form-group mb-8">
+                                <div class="alert alert-custom alert-default" role="alert">
+                                    <div class="alert-icon"><i class="flaticon-warning text-primary"></i></div>
+                                    <div class="alert-text">
+                                        Registrio de categorias
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-2 col-form-label">Id categoria</label>
+                                <div class="col-10">
+                                    <input class="form-control" type="text" name="id" value=" " disabled id="example-text-input" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-2 col-form-label">Nombre categoria</label>
+                                <div class="col-10">
+                                    <input class="form-control" type="text" name="categoria" id="example-text-input" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="example-url-input" class="col-2 col-form-label">url imgen</label>
+                                <div class="col-10">
+                                    <input class="form-control" type="url" name="imagen" id="example-url-input" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col-2">
+                                </div>
+                                <div class="col-10">
+                                    <input type="submit" class="btn btn-success mr-2" value="Enviar">
+                                    <button type="reset" class="btn btn-secondary">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!--- fin form -->
+
 
             </div>
         </div>
@@ -78,7 +123,7 @@
 
 
 
-    <!--end::Demo Panel-->
+
     <script>
     var HOST_URL = "https://preview.keenthemes.com/keen/theme/tools/preview";
     </script>
