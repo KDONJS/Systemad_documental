@@ -2,8 +2,17 @@
 
 require "db.php";
 
-//lectura de datos de la base de datos
+// mostrar en cabecera el nombre de la categoria
 
+function mostrar_categoria($conn)
+{
+    $stmt = $conn->prepare("SELECT * FROM sys_cursos ORDER BY RAND() LIMIT 7");
+    $stmt->execute();
+    $result = $stmt->fetchAll();
+    return $result;
+}
+
+//lectura de datos de la base de datos
 
 function categorias($conn)
 {
@@ -30,6 +39,14 @@ function cursos($conn)
     $stmt->execute();
     $cursos = $stmt->fetchAll();
     return $cursos;
+}
+
+function modulos($conn,$id_curso)
+{
+    $stmt = $conn->prepare("SELECT * FROM sys_modulos WHERE idSys_Cursos = $id_curso");
+    $stmt->execute();
+    $modulos = $stmt->fetchAll();
+    return $modulos;
 }
 
 
